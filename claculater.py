@@ -1,6 +1,18 @@
 #enter a number
-n1=(input("enter a first number"));
-n2=(input("enter a second number"));
+n1=int(input("enter a first number"));
+op=input("enter the op (+,-,*,/,%):")
+n2=int(input("enter a second number"));
 
-n3=int(n1)+int(n2);
-print(n3);
+if op=="+":
+    print(n1+n2);
+elif op=="-":
+    print(n1-n2);
+elif op=="*":
+    print(n1*n2);
+elif op=="/":
+    print(n1/n2);
+elif op=="%":
+    print(n1%n2);
+else:
+    print("invalid operator")
+    
